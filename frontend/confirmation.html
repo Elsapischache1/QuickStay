@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <h2>🎉 Booking Confirmed</h2>
+
+    <p>
+        <strong>Property:</strong>
+        <span id="property"></span>
+    </p>
+
+    <p>
+        <strong>Check-In:</strong>
+        <span id="start"></span>
+    </p>
+
+    <p>
+        <strong>Check-Out:</strong>
+        <span id="end"></span>
+    </p>
+
+    <p>
+        <strong>Guests:</strong>
+        <span id="guests"></span>
+    </p>
+
+    <p>
+        <strong>Total Price:</strong>
+        ₹<span id="price"></span>
+    </p>
+
+</div>
+
+<script>
+
+document.getElementById("property").innerText =
+localStorage.getItem("property");
+
+document.getElementById("start").innerText =
+localStorage.getItem("startDate");
+
+document.getElementById("end").innerText =
+localStorage.getItem("endDate");
+
+document.getElementById("guests").innerText =
+localStorage.getItem("guests");
+
+document.getElementById("price").innerText =
+localStorage.getItem("price");
+
+</script>
+
+</body>
+</html>

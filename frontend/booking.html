@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickStay - Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <h2>Book Your Stay</h2>
+
+    <select id="property">
+
+        <option value="">Select Property</option>
+
+        <option value="Luxury Apartment">
+            Luxury Apartment - Bangalore (₹3000/night)
+        </option>
+
+        <option value="Beach House">
+            Beach House - Goa (₹5000/night)
+        </option>
+
+        <option value="Hill Cottage">
+            Hill Cottage - Coorg (₹4000/night)
+        </option>
+
+        <option value="City Studio">
+            City Studio - Mumbai (₹2500/night)
+        </option>
+
+        <option value="Lake View Villa">
+            Lake View Villa - Udaipur (₹6000/night)
+        </option>
+
+    </select>
+
+    <input type="date" id="startDate">
+
+    <input type="date" id="endDate">
+
+    <input
+        type="number"
+        id="guests"
+        placeholder="Number of Guests"
+    >
+
+    <button onclick="bookProperty()">
+        Book Now
+    </button>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
